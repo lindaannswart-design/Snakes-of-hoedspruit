@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- MAIN MENU -->
+<div id="menu">
+    <h1>Snakes of Hoedspruit</h1>
+    <button onclick="startGame()">Play</button>
+    <button onclick="toggleMute()">Mute</button>
+</div>
+
+<!-- GAME UI -->
+<div id="gameUI" class="hidden">
+    <div class="top-bar">
+        <button onclick="goToMenu()">Menu</button>
+        <span>Level: <span id="levelDisplay">1</span></span>
+        <span>Score: <span id="score">0</span></span>
+    </div>
+
+    <div class="game-board" id="gameBoard"></div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
